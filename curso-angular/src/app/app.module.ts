@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders} from './app.rounting';
 
-import { ModuloEmailModule } from './moduloemail/moduloemail.module'
+// Modulos Nuevos
+import { ModuloEmailModule } from './moduloemail/components/moduloemail.module';
+import { AdminModule } from './admin/admin.module';
 
+// Componentes Nuevos
 import { AppComponent } from './app.component';
-import { SimpleTinyComponent } from './Simple-Tiny/simple-tiny.component';
-
-import { TiendaComponent } from './Tienda/tienda.component';
-import { ParquesComponent } from './Parques/parques.component';
-import { AnimalsComponent } from './Animals/Animals.component';
-import { ContactComponent } from './Contact/contact.component';
-import { homeComponent } from './Home/home.component';
-import { KeepersComponent } from './Keepers/keepers.component';
+import { SimpleTinyComponent } from './components/Simple-Tiny/simple-tiny.component';
+import { TiendaComponent } from './components/Tienda/tienda.component';
+import { ParquesComponent } from './components/Parques/parques.component';
+import { AnimalsComponent } from './components/Animals/Animals.component';
+import { ContactComponent } from './components/Contact/contact.component';
+import { homeComponent } from './components/Home/home.component';
+import { KeepersComponent } from './components/Keepers/keepers.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { KeepersComponent } from './Keepers/keepers.component';
     BrowserModule,
     FormsModule,
     routing,
-    ModuloEmailModule
+    ModuloEmailModule,
+    AdminModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

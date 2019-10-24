@@ -2,11 +2,11 @@ import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 // Componentes
-import { TiendaComponent } from './Tienda/tienda.component';
-import { AnimalsComponent } from './Animals/Animals.component';
-import { ContactComponent } from './Contact/contact.component';
-import { homeComponent } from './Home/home.component';
-import { KeepersComponent } from './Keepers/keepers.component';
+import { TiendaComponent } from './components/Tienda/tienda.component';
+import { AnimalsComponent } from './components/Animals/Animals.component';
+import { ContactComponent } from './components/Contact/contact.component';
+import { homeComponent } from './components/Home/home.component';
+import { KeepersComponent } from './components/Keepers/keepers.component';
 
 const appRoutes: Routes = [
     //{path:'',component: homeComponent},

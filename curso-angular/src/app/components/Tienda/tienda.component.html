@@ -1,0 +1,51 @@
+<a class="boton_transiciones">Transiciones</a>
+
+<hr>
+<h4>Utilizar jquery dentro de angular</h4>
+<button id="botonjq">Mostrar textos</button>
+<p id="textojq" class="alert-warning">
+    Within the download you'll find the following directories and files, logically grouping common assets 
+    and providing both compiled and minified variations. You'll see something like this
+</p>
+
+<div id="caja" style="border: 1px solid black; width: 450px; height: 100px; ">
+    Within the download you'll find the following directories and files, logically grouping common assets 
+    and providing both compiled and minified variations. You'll see something like this.
+</div>
+
+<hr/>
+
+Padre
+<h1>{{titulo}}</h1>
+<ul>
+    <li>Camiseta Roja</li>
+    <li>Gorra Negra</li>
+</ul>
+<hr/>
+<p>
+    Nombre del parque:
+    <input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()" />
+</p>
+
+<p>Resultado: {{nombreDelParque}}</p>
+
+<div *ngIf="miParque">
+    <h4>Datos de miparque desde el hijo</h4>
+    <ol>
+        <li>{{miParque.nombre}}</li>
+        <li>{{miParque.metros}}</li>
+        <li>{{miParque.vegetacion}}</li>
+        <li>{{miParque.abierto}}</li>
+    </ol>
+</div>
+
+<hr>
+
+<p *ngIf="nombreDelParque">
+    <br>
+    Hijo:
+    <parques    [nombre]="nombreDelParque" 
+                [metros_cuadrados]="999" 
+                (pasameLosDatos)="verDatosParque($event)"
+                ></parques>
+</p>

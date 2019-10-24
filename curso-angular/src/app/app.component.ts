@@ -1,10 +1,15 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+export class AppComponent {
+  title = 'NGZOO';
+}
+
+/*
 export class AppComponent implements DoCheck, OnInit {
   title = 'Ng Zoo';
   emailContacto : string;
@@ -25,3 +30,4 @@ export class AppComponent implements DoCheck, OnInit {
     this.emailContacto=null;
   }
 }
+*/
