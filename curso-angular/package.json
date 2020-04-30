@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "^8.1.0",
     "@angular/router": "^8.1.0",
     "bootstrap": "3.3.6",
-    "jquery": "1.12",
+    "jquery": "3.5",
     "jquery-dotdotdot": "1.8.2",
     "rxjs": "~6.4.0",
     "tinymce": "^5.0.11",
