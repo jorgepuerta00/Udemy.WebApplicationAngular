@@ -23,7 +23,7 @@
     "jquery": "1.12",
     "jquery-dotdotdot": "1.8.2",
     "rxjs": "~6.4.0",
-    "tinymce": "^5.0.11",
+    "tinymce": "^5.9.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
